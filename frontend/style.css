@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #222;
+}
+
+
+/* ヘッダー */
+
+header {
+    height: 70px;
+    background-color: #131921;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    max-width: 700px;
+}
+
+.search input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+}
+
+.search button {
+    padding: 0 20px;
+    border: none;
+    background-color: #febd69;
+    cursor: pointer;
+}
+
+.cart {
+    font-weight: bold;
+}
+
+
+/* ナビゲーション */
+
+nav {
+    background-color: #232f3e;
+    color: white;
+
+    padding: 15px 30px;
+
+    display: flex;
+    gap: 30px;
+}
+
+nav span {
+    cursor: pointer;
+}
+
+
+/* メイン */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+/* メインビジュアル */
+
+.hero {
+    background-color: white;
+    padding: 60px 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+
+/* 商品 */
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 5px;
+
+    transition: 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.product button {
+    width: 100%;
+
+    padding: 10px;
+
+    border: none;
+
+    background-color: #ffd814;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #f7ca00;
+}
+
+
+/* フッター */
+
+footer {
+    margin-top: 50px;
+
+    background-color: #131921;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
