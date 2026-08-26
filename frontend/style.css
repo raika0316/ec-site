@@ -174,3 +174,47 @@ footer {
 
     padding: 30px;
 }
+
+/* 商品詳細ページ */
+
+.detail{
+
+    display:flex;
+
+    gap:60px;
+
+    margin-top:40px;
+
+}
+
+
+.detail-image img{
+
+    width:350px;
+
+}
+
+
+.detail-info{
+
+    max-width:500px;
+
+}
+
+
+.detail-info h1{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+
+.detail-info button{
+
+    margin-top:30px;
+
+    width:250px;
+
+}

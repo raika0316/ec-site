@@ -20,8 +20,9 @@
         </div>
 
         <div class="cart">
-            🛒 カート
-        </div>
+    🛒 カート
+    <span id="cart-count">0</span>
+</div>
     </header>
 
 
@@ -48,31 +49,61 @@
         <section class="products">
 
             <div class="product">
-               <img src="images/earphone.png" alt="ワイヤレスイヤホン">
-                <h3>ワイヤレスイヤホン</h3>
-                <p class="price">¥4,980</p>
-                <button>カートに入れる</button>
+    <a href="product.html">
+        <img src="images/earphone.png" alt="ワイヤレスイヤホン">
+        <h3>ワイヤレスイヤホン</h3>
+    </a>
+
+      <p class="price">¥4,980</p>
+
+         <button class="add-cart"
+        data-name="ワイヤレスイヤホン"
+        data-price="4980">
+        カートに入れる
+         </button>
             </div>
 
             <div class="product">
+    <a href="product.html">
                  <img src="images/smart watch.png" alt="スマートウォッチ">
                 <h3>スマートウォッチ</h3>
+    </a>
+
                 <p class="price">¥8,980</p>
-                <button>カートに入れる</button>
-            </div>
+
+             <button class="add-cart"
+            data-name="スマートウォッチ"
+            data-price="8980">
+            カートに入れる
+             </button>
+                </div>
 
             <div class="product">
+    <a href="product.html">
                 <img src="images/speaker.png" alt="Bluetoothスピーカー">
                 <h3>Bluetoothスピーカー</h3>
+    </a>
                 <p class="price">¥3,980</p>
-                <button>カートに入れる</button>
+
+             <button class="add-cart"
+            data-name="スピーカー"
+            data-price="3980">
+            カートに入れる
+             </button>
             </div>
 
             <div class="product">
+    <a href="product.html">
                 <img src="images/mouse.png" alt="ゲーミングマウス">
                 <h3>ゲーミングマウス</h3>
+    </a>
                 <p class="price">¥5,480</p>
-                <button>カートに入れる</button>
+                
+             <button class="add-cart"
+            data-name="ゲーミングマウス"
+            data-price="5480">
+            カートに入れる
+             </button>
             </div>
 
         </section>
@@ -84,6 +115,8 @@
     <footer>
         <p>© 2026 RAIKA SHOP</p>
     </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
