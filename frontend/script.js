@@ -1,5 +1,5 @@
 // カート
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 
 // カートに入れるボタン
@@ -8,6 +8,7 @@ const cartButtons = document.querySelectorAll(".add-cart");
 
 // カートの数字
 const cartCount = document.getElementById("cart-count");
+cartCount.textContent = cart.length;
 
 
 // ボタンを全部取得
@@ -21,10 +22,28 @@ cartButtons.forEach(function(button) {
 
 
         // カートに追加
-        cart.push({
-            name: name,
-            price: price
-        });
+        // すでにカートにある商品を探す
+const existingItem = cart.find(function(item) {
+    return item.name === name;
+});
+
+if (existingItem) {
+
+    // すでにあるなら数量を1増やす
+    existingItem.quantity += 1;
+
+} else {
+
+    // なければ新しく追加
+    cart.push({
+        name: name,
+        price: price,
+        quantity: 1
+    });
+
+}
+
+        localStorage.setItem("cart", JSON.stringify(cart));
 
 
         // カートの個数を表示

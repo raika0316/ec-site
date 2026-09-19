@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ショッピングカート - RAIKA SHOP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html">RAIKA SHOP</a>
+        </div>
+
+    </header>
+
+
+    <!-- メイン -->
+    <main class="cart-page">
+
+        <h1>ショッピングカート</h1>
+
+        <!-- JavaScriptで商品を表示する場所 -->
+        <div id="cart-items"></div>
+
+
+        <!-- 合計金額 -->
+        <div class="cart-summary">
+
+            <h2>
+                合計金額：
+                <span id="total-price">¥0</span>
+            </h2>
+
+            <button class="checkout-button">
+                購入手続きへ
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="cart.js"></script>
+
+</body>
+
+</html>
